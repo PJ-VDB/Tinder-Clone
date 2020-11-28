@@ -8,7 +8,7 @@ dotenv.config();
 
 // App Config
 const app = express();
-const port = process.env.PORT | 8001
+const port = process.env.PORT || 8001;
 const connection_url = `mongodb+srv://admin:${process.env.DB_PASSWORD}@cluster0.4pajt.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 // Middlewares
